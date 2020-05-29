@@ -1,0 +1,12 @@
+/**
+ * @fileoverview added by tsickle
+ * Generated from: verzth-ngx-statistic-collector.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { NgxStatisticCollectorService, NgxStatisticCollectorModule } from './public-api';
+export { AuthorizationInterceptor as ɵb } from './interceptors/AuthorizationInterceptor';
+export { NgxStatisticCollectorConfig as ɵa } from './lib/ngx-statistic-collector.config';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmVyenRoLW5neC1zdGF0aXN0aWMtY29sbGVjdG9yLmpzIiwic291cmNlUm9vdCI6Im5nOi8vQHZlcnp0aC9uZ3gtc3RhdGlzdGljLWNvbGxlY3Rvci8iLCJzb3VyY2VzIjpbInZlcnp0aC1uZ3gtc3RhdGlzdGljLWNvbGxlY3Rvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUlBLDBFQUFjLGNBQWMsQ0FBQztBQUU3QixPQUFPLEVBQUMsd0JBQXdCLElBQUksRUFBRSxFQUFDLE1BQU0seUNBQXlDLENBQUM7QUFDdkYsT0FBTyxFQUFDLDJCQUEyQixJQUFJLEVBQUUsRUFBQyxNQUFNLHNDQUFzQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpYy1hcGknO1xuXG5leHBvcnQge0F1dGhvcml6YXRpb25JbnRlcmNlcHRvciBhcyDJtWJ9IGZyb20gJy4vaW50ZXJjZXB0b3JzL0F1dGhvcml6YXRpb25JbnRlcmNlcHRvcic7XG5leHBvcnQge05neFN0YXRpc3RpY0NvbGxlY3RvckNvbmZpZyBhcyDJtWF9IGZyb20gJy4vbGliL25neC1zdGF0aXN0aWMtY29sbGVjdG9yLmNvbmZpZyc7Il19
