@@ -2,6 +2,7 @@ export default interface ContentParams {
     _start: string;
     _end: string;
     action: any;
+    merge: number;
     columns: string[];
     page: string;
     page_type: string;
@@ -10,4 +11,8 @@ export default interface ContentParams {
     gender: string;
     type: string;
     category: string;
+    id: string;
+    attributes: any;
+    device: any;
+    location: any;
 }

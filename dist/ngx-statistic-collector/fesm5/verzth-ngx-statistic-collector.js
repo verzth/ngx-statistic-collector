@@ -69,6 +69,13 @@ var NgxStatisticCollectorConfig = /** @class */ (function () {
     /** @nocollapse */ NgxStatisticCollectorConfig.ngInjectableDef = defineInjectable({ factory: function NgxStatisticCollectorConfig_Factory() { return new NgxStatisticCollectorConfig(); }, token: NgxStatisticCollectorConfig, providedIn: "root" });
     return NgxStatisticCollectorConfig;
 }());
+/** @type {?} */
+var TIME = {
+    HOURLY: 'hourly',
+    DAILY: 'daily',
+    WEEKLY: 'weekly',
+    MONTHLY: 'monthly',
+};
 
 /**
  * @fileoverview added by tsickle
@@ -206,6 +213,6 @@ var NgxStatisticCollectorModule = /** @class */ (function () {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { NgxStatisticCollectorService, NgxStatisticCollectorModule, AuthorizationInterceptor as ɵb, NgxStatisticCollectorConfig as ɵa };
+export { NgxStatisticCollectorService, NgxStatisticCollectorModule, NgxStatisticCollectorConfig, TIME, AuthorizationInterceptor as ɵa };
 
 //# sourceMappingURL=verzth-ngx-statistic-collector.js.map

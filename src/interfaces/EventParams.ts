@@ -4,6 +4,7 @@ export default interface EventParams {
   _end: string;
   name: any;
   /* Optional */
+  merge: number;
   columns: string[];
   page: string;
   page_type: string;
@@ -12,6 +13,10 @@ export default interface EventParams {
   gender: string;
   type: string;
   category: string;
+  id: string;
+  attributes: any;
+  device: any;
+  location: any;
   isOk: number;
   status: string;
   status_number: string;

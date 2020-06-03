@@ -2,7 +2,7 @@
 [![GitHub version](https://badge.fury.io/gh/verzth%2Fngx-statistic-collector.svg)](https://badge.fury.io/gh/verzth%2Fngx-statistic-collector)
 [![npm version](https://badge.fury.io/js/%40verzth%2Fngx-statistic-collector.svg)](https://badge.fury.io/js/%40verzth%2Fngx-statistic-collector)
 
-Angular 7 Library for Statistic Data Collection.
+Angular 7+ Library for Statistic Data Collection.
 
 ### Installation
 
@@ -85,6 +85,7 @@ export class AppComponent implements OnInit{
         
         - `_start` - Mandatory - `string` : Start date (Use **RFC3339** Format).
         - `_end` - Mandatory - `string` : End date (Use **RFC3339** Format).
+        - `merge` - Optional - `number` : Merge a flag to merge all result data into single value.
         - `columns` - Optional - `string[]` : Columns list which you want to add to data.
         - `page` - Optional - `string` : Filter data by **Page**.
         - `page_type` - Optional - `string` : Filter data by **Page Type**.
@@ -99,12 +100,14 @@ export class AppComponent implements OnInit{
     Same as `HitParams` but has some additional params:
         
         - `action` - Mandatory - `any: string|string[]` : Specify data values Ex: `impression`, `click`, etc.
-        - `type` - Optional - `string` : Filter data by action **Type**
-        - `category` - Optional - `string` : Filter data by action **Category**
+        - `type` - Optional - `string` : Filter data by action **Type**.
+        - `category` - Optional - `string` : Filter data by action **Category**.
+        - `id` - Optional - `string` : Filter data by content **ID**.
         
    - `EventParams`:
     Same as `HitParams` but has some additional params:
     
         - `name` - Mandatory - `any: string|string[]` : Specify data values Ex: `login`, `logout`, etc.
-        - `type` - Optional - `string` : Filter data by action **Type**
-        - `category` - Optional - `string` : Filter data by action **Category**
+        - `type` - Optional - `string` : Filter data by name **Type**.
+        - `category` - Optional - `string` : Filter data by name **Category**.
+        - `id` - Optional - `string` : Filter data by event **ID**.

@@ -1,6 +1,6 @@
 {
   "name": "@verzth/ngx-statistic-collector",
-  "version": "0.0.1-alpha003",
+  "version": "0.0.1-alpha005",
   "description": "",
   "main": "statistic.js",
   "repository": {

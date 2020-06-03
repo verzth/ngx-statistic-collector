@@ -72,6 +72,13 @@
         /** @nocollapse */ NgxStatisticCollectorConfig.ngInjectableDef = i0.defineInjectable({ factory: function NgxStatisticCollectorConfig_Factory() { return new NgxStatisticCollectorConfig(); }, token: NgxStatisticCollectorConfig, providedIn: "root" });
         return NgxStatisticCollectorConfig;
     }());
+    /** @type {?} */
+    var TIME = {
+        HOURLY: 'hourly',
+        DAILY: 'daily',
+        WEEKLY: 'weekly',
+        MONTHLY: 'monthly',
+    };
 
     /**
      * @fileoverview added by tsickle
@@ -215,8 +222,9 @@
 
     exports.NgxStatisticCollectorService = NgxStatisticCollectorService;
     exports.NgxStatisticCollectorModule = NgxStatisticCollectorModule;
-    exports.ɵb = AuthorizationInterceptor;
-    exports.ɵa = NgxStatisticCollectorConfig;
+    exports.NgxStatisticCollectorConfig = NgxStatisticCollectorConfig;
+    exports.TIME = TIME;
+    exports.ɵa = AuthorizationInterceptor;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
