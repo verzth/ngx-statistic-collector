@@ -6,11 +6,13 @@ import {NgxStatisticCollectorConfig} from '../lib/ngx-statistic-collector.config
 export class AuthorizationInterceptor implements HttpInterceptor{
   constructor(private config: NgxStatisticCollectorConfig){}
   intercept(req: HttpRequest<any>, next: HttpHandler) {
-    const secureReq = req.clone( {
-      headers: req.headers
-        .set('Authorization', 'Basic ' + btoa(this.config.getKey() + ':')),
-      body: req.body
-    });
-    return next.handle(secureReq);
+    if(this.config.getKey()!=undefined && this.config.getKey()!=null){
+      const secureReq = req.clone( {
+        headers: req.headers
+            .set('Authorization', 'Basic ' + btoa(this.config.getKey() + ':')),
+        body: req.body
+      });
+      return next.handle(secureReq);
+    }else return next.handle(req);
   }
 }

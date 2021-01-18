@@ -160,13 +160,17 @@ var AuthorizationInterceptor = /** @class */ (function () {
      * @return {?}
      */
     function (req, next) {
-        /** @type {?} */
-        var secureReq = req.clone({
-            headers: req.headers
-                .set('Authorization', 'Basic ' + btoa(this.config.getKey() + ':')),
-            body: req.body
-        });
-        return next.handle(secureReq);
+        if (this.config.getKey() != undefined && this.config.getKey() != null) {
+            /** @type {?} */
+            var secureReq = req.clone({
+                headers: req.headers
+                    .set('Authorization', 'Basic ' + btoa(this.config.getKey() + ':')),
+                body: req.body
+            });
+            return next.handle(secureReq);
+        }
+        else
+            return next.handle(req);
     };
     AuthorizationInterceptor.decorators = [
         { type: Injectable }

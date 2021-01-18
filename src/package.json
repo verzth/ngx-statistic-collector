@@ -1,6 +1,6 @@
 {
   "name": "@verzth/ngx-statistic-collector",
-  "version": "0.0.1-alpha005",
+  "version": "0.0.2-3",
   "description": "Angular TCX JS Provider",
   "repository": {
     "type": "git",
